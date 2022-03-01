@@ -7,7 +7,7 @@ client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
 
 client.once('ready', () => {
-    client.user.setActivity('play.ayatoshub.xzy', { type: 'WATCHING'}).catch(console.error);
+    client.user.setActivity('over your discord server', { type: 'WATCHING'}).catch(console.error);
 });
 ['command_handler', 'event_handler'].forEach(handler =>{
     require(`./handlers/${handler}`)(client, Discord);
